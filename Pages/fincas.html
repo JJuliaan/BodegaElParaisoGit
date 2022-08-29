@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/estilo.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vinos - Mendoza</title>
@@ -34,11 +35,14 @@
     </header>
     <main>
         <section>
-            <h1>Nuestras Fincas</h1>
-            <div>
+            <h1 data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="500">Nuestras Fincas</h1>
+            <div data-aos="fade-up" data-aos-duration="3000">
                 <img src="../Img/fincas_fincas.jfif">
             </div>
-            <p>Nuestras fincas están situadas en Luján de Cuyo y Valle de Uco, dos de las más destacadas zonas mendocinas, cada una de las cuales aporta su unicidad y nos da vinos irrepetibles</p>
+            <p data-aos="fade-up" data-aos-duration="3000">Nuestras fincas están situadas en Luján de Cuyo y Valle de Uco, dos de las más destacadas zonas mendocinas, cada una de las cuales aporta su unicidad y nos da vinos irrepetibles</p>
             <article>
                 <h3>El Hielo</h3>
                 <h3>Los Poderosos</h3>
@@ -62,5 +66,9 @@
             <img src="../Img/Logo.jfif" class="Logo"> 
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

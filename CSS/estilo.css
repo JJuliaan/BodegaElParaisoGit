@@ -94,12 +94,16 @@ main div h1, main section h1{display: flex; justify-content: center;}
 .paraisoCImg{grid-area: paraisoCImg; padding-top: 35px; border-bottom: double;}
 .paraisoCar{grid-area: paraisoCar; padding-top: 35px; border-bottom: double;}
 .paraisoCarImg{grid-area: paraisoCarImg; width: 100%; padding-left: 100px; padding-top: 30px; padding-top: 10px; border-bottom: double;}
+/* CONTACTO */
+#contactosImg{
+    width: 100%
+}
 .contactos{
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
-} /*Profe no puedo centrarlo */
+    flex-wrap: wrap;
+}
 
 @media only screen and (max-width: 768px){
     img.Logo{height: 100px; width: 25%;}

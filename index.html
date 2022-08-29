@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="CSS/estilo.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bodegas El Paraíso</title>
@@ -38,15 +39,18 @@
         <!-- MAIN -->
         <main>
             <div>
-                <h1>Bienvenidos Al Paraiso</h1>
+                <h1 data-aos="fade-left"
+                data-aos-anchor="#example-anchor"
+                data-aos-offset="500"
+                data-aos-duration="500">Bienvenidos Al Paraiso</h1>
             </div>
-            <div>
+            <div data-aos="fade-up" data-aos-duration="3000">
                 <!-- Hola, la idea es que vayan pasando las imagenes y al apretarlas te lleven a las fincas o a los vinos o a conocer la historia -->
                 <img src="./Img/fincasInicio.jpg" alt="Conocenos">
                 <img src="./Img/vinedosInicio.jpg" alt="Fincas">
                 <img src="./Img/vinosInicio.jfif" alt="Conoce Nuestros Vinos">
             </div>
-            <article>
+            <article data-aos="fade-up" data-aos-duration="3000">
                 <p>Conectando el pasado, el presente y el futuro, de nuestro Paraiso, con mas de 85 años de excelencia mientras nos proyectamos hacia el futuro respetando nuestras raíces y destacando la singularidad del terruño mendocino</p>
                 <p>Convertirnos en una de las Bodegas Argentinas más reconocidas, honrando su identidad familiar y calidad enológica, construyendo su futuro con la pasión y compromiso de sus colaboradores para entregar valor de forma continua a sus consumidores y a todo el ecosistema de la compañía, de manera sustentable e impulsados por la innovación continua</p>
                 <p>El objetivo de Bodegas El Paraiso es claro: elaborar vinos de la más alta calidad, comprometidos con la tierra en la que nacen. Durante su elaboración, El Paraiso respeta la naturaleza y, al mismo tiempo, se involucra con la comunidad de la zona; porque la gente se convierte en un componente esencial que se refleja en la expresión de los vinos</p>
@@ -68,5 +72,9 @@
             </div>
         </footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/estilo.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bodegas El Paraiso | Contacto</title>
@@ -34,9 +35,13 @@
     </header>
     <main class="contactos">
         <div>
-            <h1>Contacto</h1>
+            <h1 data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="500">Contacto</h1>
         </div>
-        <form action="" autocomplete="on">
+        <div data-aos="fade-up" data-aos-duration="3000"><img src="../Img/Contacto.jpg" id="contactosImg"></div>
+        <form action="" autocomplete="on" data-aos="zoom-out-right">
             <label for="nombre"><p>Nombre</p></label><br>
             <input type="text" name="nombre" id="nombre" placeholder="Ej:Jhoana" required><br><br>
             <label for="apellido"><p> Apellido </p></label><br>
@@ -54,5 +59,9 @@
             <input type="submit" name="Enviar" value="Enviar">
         </form>
     </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
