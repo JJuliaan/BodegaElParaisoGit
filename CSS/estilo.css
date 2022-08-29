@@ -1,0 +1,135 @@
+*  {box-sizing: border-box ; padding: 0 ;margin: 0 ;}
+img.Logo{height: 100px;}
+img{width: 100%;}
+/* CONOCENOS */
+.imgConocenos{width: 100%; padding-bottom: 10px; border-bottom: solid;}
+.julioimg{width: 70%;}
+.fincasImg{width: 80%; padding-left: 113px; padding-bottom: 20px; padding-top: 20px;}
+.latasImg{width: 70%; padding-left: 168px; padding-top: 20px;}
+.pauTamano{width: 85%; padding-bottom: 10px;}
+.joseImg{width: 80%; padding-left: 125px;}
+/* VINOS */
+.paraisoImg{width: 28%;}
+.RDImg{width: 70%;}
+.CarImg{width: 75%;}
+p{font-family: Arial, Helvetica, sans-serif; font-weight: bold;}
+h2, h3, h4, h5{font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color: #00FFFF; padding-bottom: 10px;}
+h4, h5{color: black; font-weight: bold;}
+h1{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: #00FFFF; padding-bottom: 10px;}
+/* .border{border: 2px solid;} */
+li{
+    list-style: none;
+}
+a{text-decoration: none;}
+header{border: 2px solid;}
+header, ul{
+    overflow: hidden;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #45818E;
+    padding-top: 4px;
+}
+main{
+    background-color: #134F5C;
+    padding: 15px;
+    border: 2px solid;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #45818E;
+    border: 2px solid;
+    padding: 5px;
+}
+li{
+    font-size: 15px;
+    padding: 21px;
+    margin: 0px;
+    line-height: 12px;
+    /* border: 1px solid; */
+}
+main div h1, main section h1{display: flex; justify-content: center;}
+.gridConocenos{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 400px 400px 1240px 66px 391px 379px;
+    grid-template-areas: 
+    "mendoza mendozaimg"
+    "historiaimg historia"
+    "actualidad actualidad"
+    "encabezado encabezado"
+    "nuestroEquip pauImg"
+    "joseImg nuestroEquip1";
+}
+.mendoza{grid-area: mendoza; padding-top: 10px; border-bottom: solid;}
+.mendozaimg{grid-area: mendozaimg; padding-top: 10px; border-bottom: solid;}
+.historia{grid-area: historia; padding-top: 10px; border-bottom: solid;}
+.historiaimg{grid-area: historiaimg; padding-top: 20px; padding-left: 100px; width: 100%; border-bottom: solid;}
+.actualidad{grid-area: actualidad; padding-top: 10px; border-bottom: solid;}
+.nuestroEquip{grid-area: nuestroEquip; padding-top: 10px; border-bottom: double;}
+.pauImg{grid-area: pauImg; width: 100%; border-bottom: double;}
+.nuestroEquip1{grid-area: nuestroEquip1; padding-top: 20px;}
+.joseImg{grid-area: joseImg; padding-top: 55px;}
+.encabezado{grid-column: encabezado; padding-top: 10px;}
+
+.gridVinos{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 500px 500px 500px 500px;
+    grid-template-areas: 
+    "paraisoV paraisoVImg"
+    "paraisoRDImg paraisoRD"
+    "paraisoC paraisoCImg"
+    "paraisoCarImg paraisoCar"
+}
+.textoVinos{ justify-content: center; padding-top: 25px; padding-bottom: 25px; padding-left: 100px;}
+.paraisoV{grid-area: paraisoV; padding-top: 10px; border-bottom: double; border-top: solid;}
+.paraisoVImg{grid-area: paraisoVImg; width: 100%; padding-left: 240px; padding-top: 10px; border-bottom: double; border-top: solid;}
+.paraisoRD{grid-area: paraisoRD; padding-top: 35px; border-bottom: double;}
+.paraisoRDImg{grid-area: paraisoRDImg; width: 100%; padding-left: 95px; padding-top: 35px; padding-top: 10px; border-bottom: double;}
+.paraisoC{grid-area: paraisoC; padding-top: 35px; border-bottom: double;}
+.paraisoCImg{grid-area: paraisoCImg; padding-top: 35px; border-bottom: double;}
+.paraisoCar{grid-area: paraisoCar; padding-top: 35px; border-bottom: double;}
+.paraisoCarImg{grid-area: paraisoCarImg; width: 100%; padding-left: 100px; padding-top: 30px; padding-top: 10px; border-bottom: double;}
+.contactos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+} /*Profe no puedo centrarlo */
+
+@media only screen and (max-width: 768px){
+    img.Logo{height: 100px; width: 25%;}
+    header, ul{flex-direction: column;}
+    .gridConocenos{display: flex; flex-direction: column; flex-wrap: wrap;}
+    .imgConocenos{width: 100%; padding-bottom: 10px; padding-left: 0%; border-bottom: solid;}
+    .mendoza{padding-top: 10px;}
+    .mendozaimg{padding-bottom: 15px; border-bottom: solid;}
+    .historia{padding-top: 10px;}
+    .historiaimg{width: 100%; padding-left: 0%; padding-bottom: 10px; border-bottom: solid;}
+    .actualidad{padding-top: 10px;}
+    .fincasImg{width: 100%; padding-left: 0px; padding-bottom: 15px; padding-top: 15px;}
+    .latasImg{width: 100%; padding-left: 0px; padding-bottom: 15px; padding-top: 15px;}
+    .pauImg{width: 100%; padding-left: 0px; padding-bottom: 10px;}
+    .encabezado{padding-top: 10px;}
+    .nuestroEquip{border-bottom: none; }
+    .nuestroEquip1{padding-top: 10px;}
+    .joseImg{width: 100%; padding-left: 0%; padding-top: 10px;}
+
+    .gridVinos{display: flex; flex-direction: column; flex-wrap: wrap;}
+    .textoVinos{padding-left: 0px;}
+    .paraisoV{border-bottom: none; padding-top: 10px;}
+    .paraisoVImg{border-top: none; padding-left: 150px;}
+    .paraisoRD{border-bottom: none; padding-top: 10px;}
+    .paraisoCar{border-bottom: none; padding-top: 10px;}
+    .paraisoC{border-bottom: none; padding-top: 10px;}
+
+    footer{
+        display: flex; 
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
